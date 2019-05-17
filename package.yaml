@@ -1,0 +1,25 @@
+name: occurrence-control
+version: 0.9.0
+synopsis: Control of event occurrence in random generators
+description: |
+  Controlling the occurrence of errors when generating random structures with
+  QuickCheck or hedgehog can become very tricky very quickly. This library
+  provides a tool to control these occurrences.
+category: Test
+author: Thomas Feron <thomas.feron@redspline.com>
+license: BSD3
+license-file: LICENSE
+
+ghc-options:
+  - -Wall
+
+default-extensions:
+  - GADTs
+  - LambdaCase
+
+library:
+  source-dirs: src
+  dependencies:
+    - base
+    - free >= 5
+    - random >=1.1
